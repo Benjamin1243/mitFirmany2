@@ -1,12 +1,16 @@
 "use client"
+import { useSearchParams } from "next/navigation";
 import { FaWordpress, FaReact } from "react-icons/fa";
 import { RiNextjsFill } from "react-icons/ri";
 
-import { useSearchParams } from 'next/navigation'
+
+
+
 export default function ContactForm(){
     const searchParams = useSearchParams()
-    const topic : string | null = searchParams.get("topic")
-    console.log(topic)
+            const topic : string | null = searchParams.get("topic")
+            console.log(topic)
+    
     return(
         <form action="" className=" grid grid-cols-2 max-w-3/4 mx-auto justify-center gap-5 mb-20">
             <h2 className=" col-span-2 text-center font-sans text-3xl mb-10">Her kan du kontakte os</h2>

@@ -1,7 +1,11 @@
+"use client"
 import ContactForm from "@/components/contactForm";
 import ContactInfo from "@/components/contactInfo";
 
+import { Suspense } from "react";
+
 export default function contact(){
+     
     return(
         <>
          <article className="grid  h-[70vh] overflow-hidden ">
@@ -14,7 +18,9 @@ export default function contact(){
            
 
         </article>
-        <ContactForm></ContactForm>
+        <Suspense fallback="venter">
+        <ContactForm ></ContactForm>
+        </Suspense>
         <ContactInfo></ContactInfo>
         </>
     )
