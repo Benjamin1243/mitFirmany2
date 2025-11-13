@@ -20,7 +20,6 @@ export default function OfferComponent({offer}: Props){
         <div className="grid mb-2.5 pb-2">
        
         <div className=" rounded-lg col-start-1  row-start-1 bg-amber-100/10  z-5 "></div>
-        <img className=" h-full object-fit col-start-1 row-start-1" src={offer.img} alt="" />
         <DynamicIcon  icon={offer.img}></DynamicIcon>
 
        
@@ -34,7 +33,7 @@ export default function OfferComponent({offer}: Props){
             })}
         </ul>
 
-        <Link className=" mt-5 block font-sans text-2xl border-2 border-foreground px-5 py-1 duration-300 rounded-3xl w-1/2 mx-auto hover:bg-black/80 hover:text-background " href={offer.link}>Kom igang</Link>
+        <Link className=" mt-5 block font-sans text-xl border-2 border-foreground px-5 py-1 duration-300 rounded-3xl w-1/2 mx-auto hover:bg-black/80 hover:text-background sm:text-2xl " href={offer.link}>Kom igang</Link>
         <p className=" font-bold mt-2 font-sans">Fra:  <span className=" line-through font-light">{offer.price}</span> / { offer.newPrice} kr.</p>
     </article> 
     )

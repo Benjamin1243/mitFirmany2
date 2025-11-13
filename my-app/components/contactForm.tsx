@@ -20,11 +20,11 @@ export default function ContactForm(){
                 <input className=" border-2 rounded-sm p-3 font-sans duration-300  focus:bg-foreground/90 focus:text-background outline-0   " type="select" name="email" placeholder="E-mail" />
                 
            
-          <label htmlFor="topic" className=" font-sans"> Jeg vil gerne kontaktes omkring :<select className=" font-bold text-xl" name="topic" defaultValue={topic ? topic : ""} id="">
+          <label htmlFor="topic" className=" font-sans"> Jeg vil gerne kontaktes omkring :</label><select className=" font-bold text-xl" name="topic" defaultValue={topic ? topic : ""} id="">
             <option  value="React_site">React site </option>
             <option value="NextJs_site">Nextjs site </option>
             <option value="Wordpress_site">Wordpress site</option>
-            </select></label>
+            </select>
 
             <textarea className=" col-span-2 border-2 rounded-sm p-3 h-70" name="text" id="" placeholder="Din besked"></textarea>
             <button type="submit" className=" col-span-2 border-2 p-3 font-sans rounded-sm duration-500  text-xl hover:bg-foreground/90 hover:text-background">Kom igang med din Hjemmeside</button>

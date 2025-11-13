@@ -20,9 +20,9 @@ export default function Home() {
  <ImageText></ImageText>
   <ToturialSection></ToturialSection>
 
-  <Link className=" block max-w-90 mx-auto font-sans p-3.5  text-foreground text-shadow-xs text-center rounded-full text-4xl mb-10 " href="about-us">Vil du vide mere.....</Link>
+  <Link className=" block md:max-w-90 mx-auto font-sans p-3.5  text-foreground text-shadow-xs text-center rounded-full text-4xl mb-10 " href="about-us">Vil du vide mere.....</Link>
   <nav>
-    <ul className=" flex max-w-2xl justify-between mx-auto mb-20">
+    <ul className=" flex  max-w-[90%]  justify-between mx-auto mb-20 md:max-w-2xl">
        <li><Link className=" text-1xl font-sans duration-300  border-b-stone-800 border-b-2 hover:pb-1" href={"offers"}>Tilbud</Link></li>
       <li><Link className=" text-1xl font-sans duration-300  border-b-stone-800 border-b-2 hover:pb-1" href={"about-us"}>Hvem er vi</Link></li>
        <li><Link className=" text-1xl font-sans duration-300  border-b-stone-800 border-b-2 hover:pb-1" href={"contact"}>Kontakt os</Link></li>
