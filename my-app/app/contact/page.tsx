@@ -4,6 +4,8 @@ import ContactInfo from "@/components/contactInfo";
 
 import { Suspense } from "react";
 
+
+
 export default function contact(){
      
     return(

@@ -3,6 +3,7 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import { CiMenuBurger } from "react-icons/ci";
 import { ImCross } from "react-icons/im";
+import { FiX } from "react-icons/fi";
 
 
 export default function Header(){
@@ -30,12 +31,12 @@ export default function Header(){
     }
     return(
 <header className=" fixed w-full  z-100   " style={menuClick ? {backgroundColor: "white"}: {backgroundColor: "transparent"}}>
-    <div  className=" flex justify-between px-[2%] py-1 bg-background" style={ burgermenu ? {display: "flex"}: {display: "none"}}>
+    <div  className=" flex justify-between px-[2%] py-5 bg-background" style={ burgermenu ? {display: "flex"}: {display: "none"}}>
     <Link href={"/"} className=" text-3xl font-black font-sans">VenligWeb</Link>
-    <button aria-label="Toggle navigation" className=" z-110 text-2xl" onClick={()=>{
+    <button aria-label="Toggle navigation" className=" z-110 text-4xl" onClick={()=>{
         
        menuClick ? setMenuClick(false): setMenuClick(true)
-    }} > { menuClick ? <ImCross />: <CiMenuBurger />}
+    }} > { menuClick ? <FiX />: <CiMenuBurger />}
   </button>
     </div>
     <nav className=" h-full fixed top-0 w-full duration-200 md:h-15 left-0 px-[2%] backdrop-blur-sm bg-white md:bg-transparent" style={menuClick ? {marginLeft: "0%"}: {marginLeft: "100%"}} >
